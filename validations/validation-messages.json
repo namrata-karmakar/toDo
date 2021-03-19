@@ -1,0 +1,5 @@
+{
+    "INVALID_EMAIL_MESSAGE": "Invalid Email Entered",
+    "INVALID_PASSWORD_MESSAGE": "Password Weak",
+    "AGE_ERROR_MESSAGE" : "Age is below 18"
+}
