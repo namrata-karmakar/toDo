@@ -7,4 +7,5 @@ app.listen(config.get('port'), ()=>console.log(`listening at port ${config.get('
 app.use(express.json());
 
 app.all('/api/*', JWTMiddleware.verifyToken)
-app.use('/signUp', UserRouter.getRouter())
+app.use('/api', UserRouter.getRouter())
+app.use('/user', UserRouter.getRouter())

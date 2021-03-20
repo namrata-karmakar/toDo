@@ -1,5 +1,8 @@
 {
-    "INVALID_EMAIL_MESSAGE": "Invalid Email Entered",
+    "INVALID_EMAIL_MESSAGE": "Enter Valid Email",
     "INVALID_PASSWORD_MESSAGE": "Password Weak",
-    "AGE_ERROR_MESSAGE" : "Age is below 18"
+    "AGE_ERROR_MESSAGE" : "Age is below 18",
+    "TNC_ERROR_MESSAGE" : "Terms and Conditions not accepted",
+    "INVALID_TODO_MESSAGE" : "Should be atleast one character and atmost 1000 characters",
+    "INVALID_STATUS_MESSAGE" : "Invalid Status"
 }

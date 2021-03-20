@@ -36,7 +36,7 @@ class Database{
             const collection = db.collection(countParams.collection);
             const data = await collection.countDocuments(countParams.query, countParams.options);
             return data;
-        }catch{
+        }catch(e){
             throw e;
         }finally{
             client.close();

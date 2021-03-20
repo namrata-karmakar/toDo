@@ -1,21 +1,25 @@
 const { Database } = require('../database');
-class UniqueEmailValidation {
-    static async validateEmail(username){
-        try{ 
+const { JWTMiddleware } = require('../middlewares.js')
+class UserAuthentication {
+    static async authenticateUser(username, password){
+        try{
             const countParams = {
-                "query" : {username},
+                "query" : {username, password},
                 "options" : {},
                 "collection" : "userData"
             }
             const db = new Database();
             const count = await db.countDocuments(countParams);
-            if (count > 0){
-                throw new Error('Email exists');
+            if (count === 1){
+                console.log("Login Successful")
             }
+            return count
         }catch(e){
             throw e;
         }
     }
 }
 
-module.exports = { UniqueEmailValidation }
+module.exports = { UserAuthentication }
+
+
